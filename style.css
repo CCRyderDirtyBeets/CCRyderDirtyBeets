@@ -1,0 +1,200 @@
+
+/* Colors!
+* Background: #0a081f
+ * Dark Purple: #38396b
+ * Light Purple: #e271cb
+ * Blue: #32acbf
+ * Purple Red: #1d0819
+
+ */
+  /***********
+    BODY
+   ************/
+    html{
+        font-family: 'Newton Howard Font', sans-serif;
+                                                
+    }
+   body {
+    padding-bottom: 10rem;
+    text-align: CENTER;
+    background: #0a081f;
+    color: #eee
+}
+p {
+  font-size: 1.3em;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem; /* Adjust as needed */
+  text-align: left;
+}
+.MontserratFont{
+  font-family: 'Montserrat';
+}
+.HowardFont{
+  font-family: 'Newton Howard Font', sans-serif;
+  text-align: center;
+}
+
+      /***********
+        HEADERS
+       ************/
+       h1 {
+        
+        text-align: left;
+        font-size: 3.5em;
+        color: #eee;
+        top: 100;
+      }
+
+   
+
+      img{
+        float: left;
+        max-width: 30%;
+            height: auto;
+      }
+
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        color: #eeee;
+        font-size: 5em;
+      }
+
+
+     /***********
+        NAV BAR
+       ************/
+    /* Add a background color to the top navigation */
+    body .topnav {
+        font-family: 'Montserrat';
+        text-align: center;
+        background-color:  #38396b
+        ;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        width:100%;
+      }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+          float: center;
+          color:  #eee;
+          text-align: center;
+          padding: .3em 1em;
+          text-decoration: none;
+          font-size: 1.3em;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+          background-color:  #32acbf;
+          color: #eeee;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+          background-color: #742f52;
+          color: #eeeeee;
+        }
+
+         /***********
+        Description
+       ************/
+        .description {
+          display: flex;
+          align-items: center; /* Vertically center content */
+          height: 25rem; /* Set a height for the container */
+      }
+      .description p {
+          margin: 0; /* Remove default margin */
+      }
+        /***********
+        Images
+       ************/
+       
+
+       .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto; /* Three rows */
+       /* gap: 10px; /* Adjust gap as needed */
+    }
+    
+    .photos {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0; /* No gap between images */
+  }
+  
+  .photos li {
+      margin: 0; /* Reset margin */
+      padding: 0; /* Reset padding */
+  }
+  
+  .photos img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin: 0; /* Reset margin */
+      padding: 0; /* Reset padding */
+  }
+    
+    /* For the large image */
+    .photos .large {
+        grid-column: span 1; /* Span across two columns */
+        grid-row: span 2; /* Span two rows */
+    }
+    
+    
+    
+      /***********
+        FOOTER
+       ************/
+
+      footer {
+        margin-top: 2rem;;
+        background-color: #1d0819;
+        display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height:15rem;
+          width: 100%;
+      }
+    
+      .contact{
+        font-family: 'Newton Howard Font', sans-serif !important;
+        font-size: 1em;
+        text-align: center !important;
+      }
+       .contact-info, .links {
+        font-family:'Montserrat';
+        font-size: 1.7em;
+          text-align: center;
+          flex-basis: 100%; /* Takes full width on smaller screens */
+
+      }
+
+      footer a {
+          text-decoration: none;
+          color: #32acbf;
+          margin: 0 1rem 0 0;
+      }
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .contact-info, .links {
+          font-size: .8em; /* Adjust as needed */
+          margin: 0 0 0 .5rem; /* Adjust as needed */
+        }
+        .centered-logo{
+          font-size: .8em;
+          margin: 0 0 0 -.5rem; /* Adjust as needed */
+        }
+
+
+    }
