@@ -1,4 +1,8 @@
 
+/*
+All code written by Ari Guzzi
+    ari-guzzi.com
+  */
 /* Colors!
 * Background: #0a081f
  * Dark Purple: #38396b
@@ -149,6 +153,28 @@ p {
     .photos .large {
         grid-column: span 1; /* Span across two columns */
         grid-row: span 2; /* Span two rows */
+    }
+    
+    .photo-collage {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minimum and maximum sizes as needed */
+      gap: 10px; /* Adjust the gap between photos */
+    }
+    
+    .photos {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .photos li {
+      overflow: hidden;
+    }
+    
+    .photos img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
     
     
