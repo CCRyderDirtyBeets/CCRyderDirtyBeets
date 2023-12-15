@@ -14,6 +14,16 @@ All code written by Ari Guzzi
   /***********
     BODY
    ************/
+   @font-face {
+    font-family: "Newton Howard Font";
+    src: url("https://db.onlinewebfonts.com/t/25ec047332243d90c5f3826815f09c5b.eot");
+    src: url("https://db.onlinewebfonts.com/t/25ec047332243d90c5f3826815f09c5b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/25ec047332243d90c5f3826815f09c5b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/25ec047332243d90c5f3826815f09c5b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/25ec047332243d90c5f3826815f09c5b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/25ec047332243d90c5f3826815f09c5b.svg#Newton Howard Font")format("svg");
+}
+
     html{
         font-family: 'Newton Howard Font', sans-serif;
                                                 
