@@ -64,7 +64,7 @@ p {
 
       img{
         float: left;
-        max-width: 30%;
+        max-width: 40%;
             height: auto;
       }
 
@@ -85,12 +85,12 @@ p {
     body .topnav {
         font-family: 'Montserrat';
         text-align: center;
-        background-color:  #38396b
-        ;
+        background-color:  #38396b;
         overflow: hidden;
         display: flex;
         justify-content: center;
         width:100%;
+        margin-top: 1rem;
       }
 
         /* Style the links inside the navigation bar */
@@ -136,6 +136,10 @@ p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto; /* Three rows */
        /* gap: 10px; /* Adjust gap as needed */
+    }
+
+    .groupphoto{
+      width:150%;
     }
     
     .photos {
@@ -222,8 +226,38 @@ p {
           color: #32acbf;
           margin: 0 1rem 0 0;
       }
+
+
       /* Responsive styles */
       @media (max-width: 768px) {
+
+        h1{
+          text-align: center;
+        }
+        .grid{
+          display:block;
+        }
+        img{
+          float: none; /* Remove the float for smaller screens */
+          display: block; /* Set images to block level for centering */
+          margin: 0 auto; /* Center the image horizontally */
+          max-width: 50%; /* Adjust the width to fit the container */
+      }
+     
+      #meettheband{
+        margin-bottom: -4rem;
+      }
+
+      .groupphoto{
+        max-width:150%;
+        margin-left: -6rem;
+        margin-top: -4rem;
+      }
+      
+        p{
+          text-align: center;
+        }
+
         .contact-info, .links {
           font-size: .8em; /* Adjust as needed */
           margin: 0 0 0 .5rem; /* Adjust as needed */
@@ -232,6 +266,5 @@ p {
           font-size: .8em;
           margin: 0 0 0 -.5rem; /* Adjust as needed */
         }
-
-
+      
     }
